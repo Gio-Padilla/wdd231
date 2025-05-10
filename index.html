@@ -3,9 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Giovaughni Padilla">
     <title>Document</title>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- font-family: "Tagesschrift", "Host Grotesk", "Roboto", "Oswald", "Afacad Flux";-->
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tagesschrift&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
 </head>
 <body>
-    <h1>Test</h1>
+    <header>
+            <img src="images/profile.jpg" alt="Profile Photo" width="75" height="100">
+            <span class="title-name">Giovaughni Padilla <button id="menu-button"></button></span>
+    </header>
+    <nav>
+        <a href="#" class="located">Home</a>
+        <a href="#">Chamber</a>
+        <a href="#">Final</a>
+        <a href="#">GitHub Profile</a>
+        <a href="https://www.linkedin.com/in/giovaughni-padilla-aa37612ba/" target="_blank">LinkedIn</a>            
+    </nav>
+    <main>
+        <h1 class="page-title">Home</h1>
+        <div class="card-grid">
+            <section class="card course-work">
+                <h2>Course Work</h2>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </section>
+            <section class="card omaha">
+                <h2>Omaha, Nebraska</h2>
+                <figure>
+                    <img src="images/omaha-city.webp" alt="Omaha City" width="400" height="252">
+                    <figcaption>Omaha City</figcaption>
+                </figure>
+            </section>
+            <section class="card certificates">
+                <h2>Web and Computer Programming Certificate</h2>
+                <div class="buttons">
+                    <button id="course-all">All</button>
+                    <button id="course-cse">CSE</button>
+                    <button id="course-wdd">WDD</button>
+                </div>
+                <i>The total of credits for the courses listed below is <span id="credit-total"></span></i>
+                <div id="courses-div"></div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>©<span id="currentYear"></span> || Giovaughni Padilla || Nebraska, USA</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,53 @@
+@media screen and (max-width: 600px) {
+
+    /* ---------------------- Nav CSS ---------------------- */
+
+    nav {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav.show {
+        display: flex;
+    }
+
+    /* ---------------------- Nav Button CSS ---------------------- */
+
+    #menu-button {
+        display: block;
+    }
+
+    #menu-button.show {
+        color: red;
+    }
+
+    #menu-button.show::before {
+        content: "X";
+    }
+
+    /* ---------------------- Base Card CSS ---------------------- */
+    
+    .card-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+
+    /* ---------------------- Nav Button CSS ---------------------- */
+
+    #menu-button {
+        position: relative;
+        margin-top: -0.8rem;
+    }
+
+}
