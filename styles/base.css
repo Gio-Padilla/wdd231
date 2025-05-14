@@ -63,7 +63,7 @@ header img {
 
 /* ---------------------- Nav CSS ---------------------- */
 
-nav {
+nav div {
     background-color: var(--secondary-color);
     display: flex;
     justify-content: center;
