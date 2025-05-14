@@ -1,0 +1,51 @@
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* This is for the varibles */
+    --primary-color: rgb(21, 65, 21);
+    --secondary-color: rgb(17, 44, 29);
+    --accent-color: rgb(176, 224, 161);
+}
+
+h1 {
+    color: var(--primary-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 300px));
+    justify-content: space-evenly;
+    gap: 1rem;
+    margin: 0.5rem;
+    padding: 1rem;
+    border: 1px solid black;
+    background-color: rgb(238, 238, 238);
+    box-shadow: 0 0 1rem black;
+}
+
+#cards section {
+    margin: 0;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid black;
+    background-color: var(--accent-color);
+}
+
+#cards section h2 {
+    color: var(--primary-color);
+    text-decoration: underline;
+    margin-bottom: 1rem;
+}
+
+#cards section img {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    box-shadow: 0 0 0.8rem black;
+}
