@@ -37,9 +37,14 @@ header {
     text-align: center;
 }
 
-#site-name p, #site-name h1 {
+#site-name p {
     justify-self: center;
     align-self: center;
+}
+
+#site-name b {
+    font-size: 2em;
+    font-family: "Tagesschrift", sans-serif;
 }
 
 #site-name img {
@@ -102,6 +107,14 @@ header {
 
 #main-menu a:hover {
     background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ----------------------------- Main Body Heading CSS ----------------------------- */
+
+main h1 {
+    padding: 0.5rem;
+    text-align: center;
+    color: var(--primary-color);
 }
 
 /* ----------------------------- Footer CSS ----------------------------- */

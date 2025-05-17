@@ -26,8 +26,8 @@ function displayCompanies(companies) {
 
     // Set content
     name.textContent = company.name;
-    address.textContent = `Address: ${company.address}`;
-    phone.textContent = `Phone: ${company.phone}`;
+    address.textContent = company.address;
+    phone.textContent = company.phone;
     website.textContent = company.website;
     website.setAttribute("href", company.website);
     website.setAttribute("target", "_blank");
