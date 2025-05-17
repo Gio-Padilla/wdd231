@@ -1,0 +1,86 @@
+/* ----------------------------- Menu CSS ----------------------------- */
+
+#menu-directory {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* ----------------------------- Grid/List Buttons CSS ----------------------------- */
+
+#view-options {
+    padding: 1rem 1rem 0 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#view-options button {
+    padding: 1rem 2rem;
+    cursor: pointer;
+    background-image: linear-gradient(var(--light-text-color), var(--light-text-color2));
+    border: 2px solid transparent;
+    border-radius: 1rem;
+    font-weight: bold;
+}
+
+#view-options button:hover {
+    filter: invert(10%);
+}
+
+/* ----------------------------- Grid Gallery Cards CSS ----------------------------- */
+
+#company-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 2000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#company-gallery section {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 3px solid var(--primary-color);
+    background-image: linear-gradient(var(--light-text-color), var(--light-text-color2));
+    box-shadow: 0 0 0.5rem black;
+}
+
+#company-gallery img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+/* ----------------------------- List Gallery Cards CSS ----------------------------- */
+
+#company-gallery.list {
+    grid-template-columns: 1fr;
+    gap: 0;
+}
+
+#company-gallery.list section {
+    box-shadow: none;
+    background-image: none;
+    background-color: var(--light-text-color2);
+    border-radius: 0;
+    border: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    outline: 1px solid #ccc;
+    outline-offset: -1px;
+}
+
+#company-gallery.list h2 {
+    font-size: 1em;
+}
+
+#company-gallery.list section:nth-child(odd) {
+  background-color: var(--light-text-color);
+}
+
+#company-gallery.list img {
+    display: none;
+}

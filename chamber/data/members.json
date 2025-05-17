@@ -1,0 +1,101 @@
+[
+  {
+    "name": "Heartland Technologies",
+    "address": "1234 Farnam St, Omaha, NE 68102",
+    "phone": "(402) 555-1234",
+    "website": "https://www.heartlandtech.com",
+    "image": "heartlandtech.webp",
+    "membership_level": 3,
+    "description": "IT consulting and cloud solutions provider.",
+    "industry": "Technology",
+    "contact_person": "Jessica Lane"
+  },
+  {
+    "name": "Prairie Financial Group",
+    "address": "5678 Dodge St, Omaha, NE 68132",
+    "phone": "(402) 555-5678",
+    "website": "https://www.prairiefinancial.com",
+    "image": "prairiefinancial.webp",
+    "membership_level": 2,
+    "description": "Full-service financial planning and wealth management.",
+    "industry": "Finance",
+    "contact_person": "Mark Davidson"
+  },
+  {
+    "name": "Big Red Marketing",
+    "address": "900 N 96th St, Omaha, NE 68114",
+    "phone": "(402) 555-9988",
+    "website": "https://www.bigredmarketing.com",
+    "image": "bigredmarketing.webp",
+    "membership_level": 3,
+    "description": "Creative agency specializing in digital campaigns.",
+    "industry": "Marketing",
+    "contact_person": "Tyler Brooks"
+  },
+  {
+    "name": "Omaha Green Builders",
+    "address": "4501 S 24th St, Omaha, NE 68107",
+    "phone": "(402) 555-7712",
+    "website": "https://www.omahagreenbuilders.com",
+    "image": "omahagreenbuilders.webp",
+    "membership_level": 2,
+    "description": "Eco-friendly home and commercial construction.",
+    "industry": "Construction",
+    "contact_person": "Laura Chen"
+  },
+  {
+    "name": "Riverfront Realty",
+    "address": "202 Riverfront Dr, Omaha, NE 68102",
+    "phone": "(402) 555-2121",
+    "website": "https://www.riverfrontrealty.com",
+    "image": "riverfrontrealty.webp",
+    "membership_level": 1,
+    "description": "Residential and commercial real estate services.",
+    "industry": "Real Estate",
+    "contact_person": "Carlos Mendoza"
+  },
+  {
+    "name": "Pioneer Health Solutions",
+    "address": "1500 Medical Center Dr, Omaha, NE 68105",
+    "phone": "(402) 555-4444",
+    "website": "https://www.pioneerhealth.com",
+    "image": "pioneerhealth.webp",
+    "membership_level": 3,
+    "description": "Innovative healthcare services and wellness programs.",
+    "industry": "Healthcare",
+    "contact_person": "Emily Zhao"
+  },
+  {
+    "name": "Midwest Logistics Inc.",
+    "address": "300 Industrial Rd, Omaha, NE 68110",
+    "phone": "(402) 555-3100",
+    "website": "https://www.midwestlogistics.com",
+    "image": "midwestlogistics.webp",
+    "membership_level": 2,
+    "description": "Warehousing, shipping, and supply chain management.",
+    "industry": "Logistics",
+    "contact_person": "George Patel"
+  },
+  {
+    "name": "Bright Future Academy",
+    "address": "789 Learning Ln, Omaha, NE 68106",
+    "phone": "(402) 555-6789",
+    "website": "https://www.brightfutureacademy.org",
+    "image": "brightfutureacademy.webp",
+    "membership_level": 1,
+    "description": "Private K–12 school with STEAM-focused curriculum.",
+    "industry": "Education",
+    "contact_person": "Sarah Lindstrom"
+  },
+  {
+    "name": "Blue Sky Media",
+    "address": "401 Creative Ave, Omaha, NE 68131",
+    "phone": "(402) 555-8585",
+    "website": "https://www.blueskymedia.com",
+    "image": "blueskymedia.webp",
+    "membership_level": 2,
+    "description": "Video production and content strategy experts.",
+    "industry": "Media",
+    "contact_person": "Daniel Romero"
+  }
+]
