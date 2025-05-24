@@ -9,13 +9,14 @@
     <meta property="og:title" content="Chamber of Commerce - Omaha, Nebraska - Directory">
     <meta property="og:description" content="Explore our curated directory of businesses proudly serving the Omaha, Nebraska area. Discover local companies across a wide range of industries and services.">
     <meta property="og:image" content="https://gio-padilla.github.io/wdd231/chamber/images/omaha-logo.webp">
-    <meta property="og:url" content="https://gio-padilla.github.io/wdd231/chamber/directory.html">
-    <title>Chamber of Commerce - Omaha, Nebraska - Directory</title>
+    <meta property="og:url" content="https://gio-padilla.github.io/wdd231/chamber/index.html">
+    <title>Chamber of Commerce - Omaha, Nebraska - Home</title>
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/directory.css">
-    <script src="scripts/directory.js" defer></script>
+    <link rel="stylesheet" href="styles/index.css">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/company-spotlights.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- font-family: "Tagesschrift", "Host Grotesk", "Roboto", "Oswald", "Afacad Flux";-->
@@ -40,12 +41,56 @@
         </nav>
     </header>
     <main>
-        <h1>Omaha Business Directory</h1>
-        <div id="view-options">
-            <button id="grid-view-option">Grid View</button>
-            <button id="list-view-option">List View</button>
+        <h1>Welcome</h1>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-wide.jpg" media="(min-width: 700px)">
+                <img src="images/hero-normal.jpg" alt="">
+            </picture>
+            <div>
+                <p>Connecting Omaha’s businesses, building tomorrow’s opportunities!</p>
+                <a href="join.html">Join today!</a>
+            </div>
         </div>
-        <div id="company-gallery"></div>
+        <div class="sections">
+            <section>
+                <h2>Events</h2>
+                <div id="current-events">
+                    <article>
+                        <h3>Omaha Summer Arts Festival</h3>
+                        <p><strong>Date:</strong> Mid-June (annually)</p>
+                        <p><strong>Location:</strong> Aksarben Village or downtown Omaha</p>
+                        <p><strong>Description:</strong> A vibrant celebration featuring local and national artists, live music, food vendors, and family-friendly activities. Free and open to the public.</p>
+                    </article>
+
+                    <article>
+                        <h3>Jazz on the Green</h3>
+                        <p><strong>Date:</strong> Thursdays, mid-July to mid-August</p>
+                        <p><strong>Location:</strong> Turner Park at Midtown Crossing</p>
+                        <p><strong>Description:</strong> Free summer jazz concert series with performances by local and national artists. Open seating, bring blankets or chairs.</p>
+                    </article>
+
+                    <article>
+                        <h3>Nebraska State Fair</h3>
+                        <p><strong>Date:</strong> Late August to early September</p>
+                        <p><strong>Location:</strong> Grand Island, NE (widely promoted in Omaha)</p>
+                        <p><strong>Description:</strong> A large regional fair with rides, concerts, exhibits, food, and entertainment. Many Omaha residents and businesses participate.</p>
+                    </article>
+                </div>
+            </section>
+            <section>
+                <h2>Current Weather</h2>
+                <div id="current-weather">
+                    <p id="current-weather-data"></p>
+                    <img id="current-weather-icon" src="https://placehold.co/100x100" alt="Weather">
+                </div>
+            </section>
+            <section>
+                <h2>Weather Forcast</h2>
+                <div id="weather-forcast-data"></div>
+            </section>
+        </div>
+        <div id="company-spotlights"></div>
     </main>
     <footer>
         <div>

@@ -1,0 +1,165 @@
+/* ----------------------------- Menu CSS ----------------------------- */
+
+#menu-home {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* ----------------------------- Hero CSS ----------------------------- */
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    z-index: 0;
+}
+
+.hero div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* center the content */
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    z-index: 1; /* ensures it's above the image */
+    
+}
+
+.hero a {
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    background-image: linear-gradient(var(--primary-color), var(--secondary-color));
+    color: white;
+    border-radius: 1rem;
+}
+
+.hero a:hover {
+    filter: invert(10%);
+}
+
+/* ----------------------------- Events Weather Cards CSS ----------------------------- */
+
+.sections {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin: 0.5rem;
+}
+
+.sections section {
+    background-image: linear-gradient(var(--light-text-color), var(--light-text-color2));;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 0 0.5rem var(--primary-color);
+    overflow: hidden;
+
+}
+
+.sections section h2 {
+    padding: 0.5rem 1rem;
+    background-image: linear-gradient(var(--primary-color), var(--secondary-color));
+    color: var(--light-text-color);
+    
+}
+
+.sections section p {
+    padding: 1rem;
+}
+
+#current-weather {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#current-weather-icon {
+    background-image: radial-gradient(var(--primary-color), transparent, transparent);
+    width: 100px;
+    height: auto;
+    max-width: 100px;
+    min-width: 50px;
+}
+
+#weather-forcast-data {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#weather-forcast-data b {
+    text-decoration: underline;
+}
+
+/* ----------------------------- Current Events CSS ----------------------------- */
+
+#current-events {
+    padding-bottom: 0.5rem;
+}
+
+#current-events p {
+    padding: 0.2rem 0.5rem;
+}
+
+#current-events h3 {
+    padding: 0.5rem;
+    border-bottom: 2px solid var(--primary-color);
+    margin: 0 0.5rem;
+}
+
+/* ----------------------------- Spotlight Companies CSS ----------------------------- */
+
+#company-spotlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.member-card {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 3px solid var(--primary-color);
+    background-image: linear-gradient(var(--light-text-color), var(--light-text-color2));
+    box-shadow: 0 0 0.5rem black;
+}
+
+.member-card img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+
+/* ----------------------------- Small CSS ----------------------------- */
+/* ----------------------------- Small CSS ----------------------------- */
+/* ----------------------------- Small CSS ----------------------------- */
+
+@media screen and (max-width: 830px) {
+    .sections {
+        grid-template-columns: 1fr;
+        margin: 0;
+    }
+
+    .sections section {
+        border: 0;
+        border-bottom: 1px solid var(--secondary-color);
+        border-radius: 0;
+        margin: 0.5rem 0;
+    }
+}

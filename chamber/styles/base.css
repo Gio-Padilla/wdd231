@@ -9,7 +9,8 @@
     --primary-color: rgb(21, 65, 21);
     --secondary-color: rgb(17, 44, 29);
     --light-text-color: rgb(200, 236, 189);
-    --light-text-color2: rgb(190, 216, 238);
+    --light-text-color2: rgb(213, 214, 200);
+    --layout-change: 830px;
 }
 
 h1, h2, h3, h4, h5, h6 {
