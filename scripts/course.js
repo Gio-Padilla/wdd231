@@ -84,24 +84,66 @@ const buttonAll = document.getElementById("course-all");
 const buttonCse = document.getElementById("course-cse");
 const buttonWdd = document.getElementById("course-wdd");
 const creditSpan = document.getElementById("credit-total");
+const courseDetails = document.getElementById("course-details");
 
 function displayCourses(coursesToDisplay) {
     if (courseDiv) {
         courseDiv.innerHTML = "";
         coursesToDisplay.forEach(course => {
-            const courseP = document.createElement("p");
-            courseP.textContent = `${course.subject} ${course.number}`;
+            const courseButton = document.createElement("button");
+            courseButton.textContent = `${course.subject} ${course.number}`;
             if (course.completed) {
-                courseP.textContent = `${courseP.textContent} ✓`;
-                courseP.classList.add("completed-course");
+                courseButton.textContent = `${courseButton.textContent} ✓`;
+                courseButton.classList.add("completed-course");
             }
-            courseDiv.append(courseP);
+            courseDiv.append(courseButton);
+            courseButton.addEventListener("click", function () {
+                setModalDetails(course);
+                courseDetails.showModal();
+            });
         });
 
         const totalCredits = coursesToDisplay.reduce((sum, course) => sum + course.credits, 0);
         creditSpan.textContent = totalCredits;
 
     }
+}
+
+function setModalDetails(course) {
+    const modHeading = document.createElement("h2");
+    const modClassName = document.createElement("h3");
+    const modCredits = document.createElement("p");
+    const modCertificate = document.createElement("p");
+    const modDescription = document.createElement("p");
+    const modTechnology = document.createElement("p");
+
+    modHeading.textContent = `${course.subject} ${course.number}`;
+    modHeading.innerHTML += '<button popovertarget="course-details" popovertargetaction="hide">X</button>';
+    modClassName.textContent = course.title;
+    
+    modCredits.textContent = `${course.credits} credits`;
+    modCertificate.textContent = `Certificate: ${course.certificate}`;
+    modDescription.textContent = course.description;
+
+    modTechnology.textContent = "Technology: ";
+    course.technology.forEach(element => {
+        modTechnology.textContent += element;
+        modTechnology.textContent += ", "
+    });
+    modTechnology.textContent = modTechnology.textContent.slice(0, -2);
+
+    courseDetails.innerHTML = "";
+    courseDetails.appendChild(modHeading);
+    courseDetails.appendChild(modClassName);
+    courseDetails.appendChild(modCredits);
+    courseDetails.appendChild(modCertificate);
+    courseDetails.appendChild(modDescription);
+    courseDetails.appendChild(modTechnology);
+
+    closeButton = document.querySelector("#course-details button");
+    closeButton.addEventListener("click", function () {
+        courseDetails.close();
+    });
 }
 
 function filterCourses(subject) {
