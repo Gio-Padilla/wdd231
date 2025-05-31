@@ -1,0 +1,116 @@
+<!-- This page provides a list of local business and other organizations that belong to the chamber of commerce. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join our local team and become a member as it continues to grow in the Omaha, Nebraska area.">
+    <meta name="author" content="Giovaughni Padilla">
+    <meta property="og:title" content="Chamber of Commerce - Omaha, Nebraska - Join Today">
+    <meta property="og:description" content="Join our local team and become a member as it continues to grow in the Omaha, Nebraska area.">
+    <meta property="og:image" content="https://gio-padilla.github.io/wdd231/chamber/images/omaha-logo.webp">
+    <meta property="og:url" content="https://gio-padilla.github.io/wdd231/chamber/join.html">
+    <title>Chamber of Commerce - Omaha, Nebraska - Join Today</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- font-family: "Tagesschrift", "Host Grotesk", "Roboto", "Oswald", "Afacad Flux";-->
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tagesschrift&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <div id="site-name">
+            <img src="images/omaha-logo.webp" alt="Omaha Logo" width="120" height="120">
+            <p><b>Omaha</b></p>
+            <p>Chamber of Commerce</p>
+        </div>
+        <button id="menu-button"></button>
+        <nav id="main-menu">
+            <ul>
+                <li><a href="index.html" id="menu-home">Home</a></li>
+                <li><a href="directory.html" id="menu-directory">Directory</a></li>
+                <li><a href="join.html" id="menu-join">Join</a></li>
+                <li><a href="discover.html" id="menu-discover">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Join Us Today!</h1>
+        <div class="content-grid">
+            <form method="get" action="thankyou.html" id="join-form">
+                <h2>Membership Application Form</h2>
+                <label for="form-fn">First Name:</label>
+                <input type="text" name="fn" id="form-fn" autocomplete="given-name" required>
+                <label for="form-ln">Last Name:</label>
+                <input type="text" name="ln" id="form-ln" autocomplete="family-name" required>
+                <label for="form-jt">Job Title:</label>
+                <input type="text" name="jt" id="form-jt" autocomplete="organization-title">
+                <label for="form-email">Email:</label>
+                <input type="email" name="email" id="form-email" autocomplete="email" placeholder="example@gmail.com" required>
+                <label for="form-phone">Phone #:</label>
+                <input type="tel" name="phone" id="form-phone" autocomplete="tel" placeholder="987-654-3210">
+                <label for="form-company">Company Name:</label>
+                <input type="text" name="company" id="form-company" autocomplete="organization" required>
+                <label for="form-level">Membership Level:</label>
+                <select name="level" id="form-level" required>
+                    <option value="" disabled selected>Select a Membership Level ...</option>
+                    <option value="Non Profit">Non Profit Membership</option>
+                    <option value="Bronze">Bronze Membership</option>
+                    <option value="Silver">Silver Membership</option>
+                    <option value="Gold">Gold Membership</option>
+                </select>
+                <label for="form-desc">Business Description:</label>
+                <textarea name="desc" id="form-desc"></textarea>
+                <input type="hidden" name="time" id="timestamp">
+                <input type="submit" value="Confirm Membership Request">
+            </form>
+            <div id="membership-levels">
+                <h2>Membership Levels</h2>
+                <div class="card">
+                    <h3>Non Profit Membership Level</h3>
+                    <button>Learn More</button>
+                </div>
+                <div class="card">
+                    <h3>Bronze Membership Level</h3>
+                    <button>Learn More</button>
+                </div>
+                <div class="card">
+                    <h3>Silver Membership Level</h3>
+                    <button>Learn More</button>
+                </div>
+                <div class="card">
+                    <h3>Gold Membership Level</h3>
+                    <button>Learn More</button>
+                </div>
+            </div>
+            <dialog id="membership-details"></dialog>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p><b>Omaha Chamber of Commerce</b></p>
+            <p>123 West Street</p>
+            <p>Omaha, Nebraska, 68137</p>
+            <p>gpadilla@byupathway.edu</p>
+            <p>(123) 456-7890</p>
+        </div>
+        <div>
+            <a href="https://www.facebook.com/"><img src="images/facebook.svg" alt="Facebook" width="50" height="50"></a>
+            <a href="https://www.instagram.com/"><img src="images/instagram.svg" alt="Instagram" width="50" height="50"></a>
+            <a href="https://x.com/"><img src="images/twitter.svg" alt="Twitter" width="50" height="50"></a>
+        </div>
+        <div>
+            <p>WDD231 Class Project</p>
+            <p>Giovaughni Padilla</p>
+            <p>©<span id="currentYear">XXXX</span> || Giovaughni Padilla || Nebraska, USA</p>
+            <p id="lastModified">Last Modified: XXXX</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

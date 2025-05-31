@@ -141,6 +141,7 @@ function setModalDetails(course) {
     courseDetails.appendChild(modTechnology);
 
     closeButton = document.querySelector("#course-details button");
+    
     closeButton.addEventListener("click", function () {
         courseDetails.close();
     });
