@@ -1,0 +1,93 @@
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* This is for the varibles */
+    --primary-color: #1c3e5a;
+    --secondary-color: #632b15;
+    --accent-color: #e7e7f0;
+    --second-accent-color: #f5e9c2;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Caveat", cursive;
+    font-weight: bolder;
+}
+
+/* ----------------------------- Header CSS ----------------------------- */
+
+header {
+    padding: 1rem 2rem;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+}
+
+/* ----------------------------- Section CSS ----------------------------- */
+
+section {
+    margin: 1rem;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 0 1rem var(--secondary-color);
+}
+
+section b {
+    display: block;
+    padding: 0.5rem;
+}
+
+section ul {
+    padding: 0.5rem 1rem;
+    list-style-position: inside;
+}
+
+ul li {
+    padding: 0.2rem;
+}
+
+section p {
+    padding: 0.3rem;
+    margin: 0 1rem;
+}
+
+section h2 {
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+    padding: 1rem;
+}
+
+/* ----------------------------- Color Section CSS ----------------------------- */
+
+#color-schema b:nth-of-type(1) {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+#color-schema b:nth-of-type(2) {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+#color-schema b:nth-of-type(3) {
+    background-color: var(--accent-color);
+}
+
+#color-schema b:nth-of-type(4) {
+    background-color: var(--second-accent-color);
+}
+
+#color-schema b {
+    padding: 1rem;
+    margin: 0.2rem;
+}
+
+/* ----------------------------- Color Section CSS ----------------------------- */
+
+.font-caveat {
+    font-family: "Caveat", cursive;
+    font-size: larger;
+}
