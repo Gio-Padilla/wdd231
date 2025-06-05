@@ -85,6 +85,32 @@ section h2 {
     margin: 0.2rem;
 }
 
+/* ----------------------------- Wireframe Section CSS ----------------------------- */
+
+.wireframes {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.wireframes figcaption {
+    text-align: center;
+    font-size: larger;
+    background-color: var(--primary-color);
+    margin: 0 1rem;
+    padding: 0.5rem;
+    color: white;
+}
+
+.wireframes img {
+    max-width: initial;
+    width: 100%;
+    height: auto;
+}
+
+
+
+
 /* ----------------------------- Color Section CSS ----------------------------- */
 
 .font-caveat {
