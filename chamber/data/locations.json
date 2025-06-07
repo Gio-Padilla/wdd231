@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Henry Doorly Zoo and Aquarium",
+    "image": "henry-zoo.webp",
+    "address": "3701 S 10th St, Omaha, NE 68107",
+    "shortDescription": "One of the top-rated zoos in the world, featuring animals from all over the globe.",
+    "longDescription": "The Henry Doorly Zoo and Aquarium is a world-renowned destination and a crown jewel of Omaha. It features expansive habitats like the Desert Dome, Lied Jungle, and the Suzanne and Walter Scott Aquarium. Visitors can explore immersive environments that house thousands of animals and marine life. It also boasts a skyfari, a train, and seasonal events that make each visit unique. The zoo is a favorite for families and tourists alike, offering educational experiences alongside entertainment. It's a must-visit location that showcases Omaha's commitment to wildlife conservation and world-class attractions."
+  },
+  {
+    "name": "Joslyn Art Museum",
+    "image": "joslyn-museum.webp",
+    "address": "2200 Dodge St, Omaha, NE 68102",
+    "shortDescription": "Omaha’s premier art museum showcasing classical to contemporary art in a stunning building.",
+    "longDescription": "The Joslyn Art Museum is a cultural cornerstone in Omaha, known for its impressive collection of art from around the world. The building itself is a work of art, with its pink marble façade and elegant interior spaces. Inside, visitors will find works by artists such as Rembrandt, Monet, and Pollock, along with rotating exhibitions that highlight diverse styles and cultures. Admission is free, making art accessible to all. The museum also offers educational programs, family activities, and a beautiful sculpture garden, making it a serene and inspiring place to visit."
+  },
+  {
+    "name": "Bob Kerrey Pedestrian Bridge",
+    "image": "pedestrian-bridge.webp",
+    "address": "705 Riverfront Dr, Omaha, NE 68102",
+    "shortDescription": "A scenic pedestrian bridge that spans the Missouri River and connects two states.",
+    "longDescription": "The Bob Kerrey Pedestrian Bridge is a 3,000-foot-long bridge that connects Omaha, Nebraska, with Council Bluffs, Iowa. It’s a popular spot for walkers, joggers, and cyclists, offering panoramic views of the Missouri River and downtown Omaha. The bridge features a distinctive curved design and a fun photo-op at the state line marker in the middle. At night, the bridge is beautifully lit, adding to its charm and making it a favorite for evening strolls. The surrounding RiverFront area has been revitalized with parks and attractions, making the bridge a gateway to adventure and relaxation."
+  },
+  {
+    "name": "Durham Museum",
+    "image": "durham-museum.webp",
+    "address": "801 S 10th St, Omaha, NE 68108",
+    "shortDescription": "A history museum located in a beautifully restored Art Deco train station.",
+    "longDescription": "Housed in the former Union Station, the Durham Museum offers a fascinating look at the history of Omaha and the American West. The building itself is a marvel of Art Deco architecture, complete with original fixtures and finishes. Exhibits cover topics like Native American culture, pioneer life, railroads, and Omaha’s development through the years. The museum also hosts traveling exhibitions from the Smithsonian and other major institutions. With interactive displays and restored train cars, it’s a dynamic place to learn and explore. The Durham Museum is both a historical treasure and an educational hub for visitors of all ages."
+  },
+  {
+    "name": "Lauritzen Gardens",
+    "image": "lauritzen-gardens.webp",
+    "address": "100 Bancroft St, Omaha, NE 68108",
+    "shortDescription": "A beautiful botanical garden offering seasonal displays and walking trails.",
+    "longDescription": "Lauritzen Gardens is Omaha’s premier botanical center, nestled on over 100 acres near the Missouri River. It offers a peaceful retreat with themed gardens such as the rose garden, Victorian garden, and model railroad garden. The visitor and education center includes a stunning conservatory and seasonal floral shows. Educational programs, birdwatching, and walking paths make it a great destination year-round. Whether you're a plant enthusiast or simply looking for a tranquil escape, Lauritzen Gardens is a serene and inspiring place to connect with nature."
+  },
+  {
+    "name": "Strategic Air Command & Aerospace Museum",
+    "image": "aerospace-museum.webp",
+    "address": "28210 W Park Hwy, Ashland, NE 68003",
+    "shortDescription": "A museum dedicated to aviation history and aerospace technology, located near Omaha.",
+    "longDescription": "Located just outside Omaha, the Strategic Air Command & Aerospace Museum houses one of the nation's premier collections of aircraft and aerospace exhibits. It focuses on the history of Strategic Air Command, Cold War aviation, and technological innovation in aerospace. The museum includes massive aircraft hangars, flight simulators, and rotating educational exhibits. Families and school groups regularly visit to learn about science, history, and engineering. It’s a must-see for aviation enthusiasts and those curious about America’s role in global air defense."
+  },
+  {
+    "name": "Aksarben Village",
+    "image": "aksarben-village.webp",
+    "address": "67th & Center St, Omaha, NE 68106",
+    "shortDescription": "A lively mixed-use development with dining, entertainment, and events.",
+    "longDescription": "Aksarben Village is a modern neighborhood blending business, lifestyle, and entertainment. Once home to a horse racing track, it’s now a thriving hub featuring restaurants, shops, a cinema, hotels, and apartment complexes. Stinson Park at the heart of the village hosts concerts, farmers markets, and festivals throughout the year. It’s also home to the University of Nebraska at Omaha's Scott Campus, bringing a youthful energy to the area. Whether you’re enjoying live music, grabbing dinner, or attending an event, Aksarben Village is a go-to spot for locals and visitors alike."
+  },
+  {
+    "name": "Fontenelle Forest",
+    "image": "fontenelle-forest.webp",
+    "address": "1111 Bellevue Blvd N, Bellevue, NE 68005",
+    "shortDescription": "A vast forest and nature reserve offering hiking, education, and wildlife experiences.",
+    "longDescription": "Fontenelle Forest is one of Nebraska’s oldest conservation organizations and offers more than 2,000 acres of protected forest, prairie, and wetlands. Located just minutes from Omaha in Bellevue, the forest features over 17 miles of hiking trails, including accessible boardwalks and scenic overlooks. It provides a home to diverse wildlife and is a prime spot for birdwatching. The nature center includes interactive exhibits and educational programs for all ages. Fontenelle Forest serves as a natural escape from the city, inviting visitors to reconnect with the environment year-round."
+  }
+]

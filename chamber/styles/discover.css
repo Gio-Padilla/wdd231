@@ -1,0 +1,156 @@
+/* ----------------------------- Menu CSS ----------------------------- */
+
+#menu-discover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* ----------------------------- Locations CSS ----------------------------- */
+
+#locations {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(525px, 1fr));
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.5rem;
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+/* ----------------------------- Visit Message CSS ----------------------------- */
+
+#visit-message {
+ display: block;
+ text-align: center;
+ margin-bottom: 1rem;
+ font-size: 1.3em;
+}
+
+/* ----------------------------- Cards CSS ----------------------------- */
+
+#locations .card {
+    background-color: var(--light-text-color);
+    background-image: linear-gradient(var(--light-text-color), var(--light-text-color2));
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-areas: 
+        "title title"
+        "image desc"
+        "image address"
+        "button button";
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 1rem var(--primary-color);
+    border-radius: 0.3rem;
+
+}
+
+#locations .card h2 {
+    grid-area: title;
+    border-bottom: 5px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+#locations .card figure {
+    grid-area: image;
+    margin: 0;
+    justify-self: center;
+}
+
+#locations .card img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 0.8rem var(--primary-color);
+    border-radius: 0.3rem;
+}
+
+#locations .card p {
+    grid-area: desc;
+}
+
+#locations .card address {
+    grid-area: address;
+}
+
+#locations .card button {
+    grid-area: button;
+    background-color: var(--primary-color);
+    background-image: linear-gradient(var(--primary-color), var(--secondary-color));
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#locations .card button:hover {
+    filter: invert(15%);
+}
+
+/* ----------------------------- Modal CSS ----------------------------- */
+
+::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#learn-more {
+    background-color: var(--light-text-color);
+    background-image: linear-gradient(var(--light-text-color), var(--light-text-color2));
+    margin: auto;
+    padding: 1rem;
+    border: 1px solid black;
+    box-shadow: 0 0 2rem black;
+    border-radius: 0.5rem;
+}
+
+#learn-more div {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 5px solid var(--primary-color);
+}
+
+#learn-more h2 {
+    align-self: flex-end;
+    color: var(--primary-color);
+}
+
+#learn-more button {
+    border: 1px solid black;
+    padding: 0.8rem 1rem;
+    margin: 0.1rem 0;
+    border-radius: 0.5rem;
+    font-size: 1.3em;
+    background-color: red;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+}
+
+#learn-more button:hover {
+    background-color: orange;
+}
+
+#learn-more p, #learn-more address {
+    padding: 0.5rem;
+}
+
+/* ----------------------------- Small CSS ----------------------------- */
+/* ----------------------------- Small CSS ----------------------------- */
+/* ----------------------------- Small CSS ----------------------------- */
+
+@media screen and (max-width: 600px) {
+
+    #locations {
+        grid-template-columns: 1fr;
+    }
+
+    #locations .card {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "title"
+            "image"
+            "desc"
+            "address"
+            "button";
+    }
+}
