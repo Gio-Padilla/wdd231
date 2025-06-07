@@ -42,7 +42,7 @@
     border: 1px solid #ccc;
     box-shadow: 0 0 1rem var(--primary-color);
     border-radius: 0.3rem;
-
+    max-width: 1000px;
 }
 
 #locations .card h2 {
