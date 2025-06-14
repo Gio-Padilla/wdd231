@@ -1,0 +1,154 @@
+{
+  "questions": [
+    {
+      "question": "Which of the following best describes a Python variable?",
+      "choices": [
+        "A container that holds only numbers.",
+        "A named location in memory that stores data which can be changed.",
+        "A reserved word used to control the flow of a program.",
+        "A function used to repeat code."
+      ],
+      "answer": "A named location in memory that stores data which can be changed."
+    },
+    {
+      "question": "What will be printed by this code?\n\nx = 5\nif x > 3:\n    print('Big')\nelse:\n    print('Small')",
+      "choices": ["Small", "Big", "x", "Error"],
+      "answer": "Big"
+    },
+    {
+      "question": "Which loop is most appropriate when you know how many times to repeat an action?",
+      "choices": ["while loop", "for loop", "do-while loop", "switch loop"],
+      "answer": "for loop"
+    },
+    {
+      "question": "What is the correct way to define a function that takes a name and prints a greeting?",
+      "choices": [
+        "function greet(name): print('Hello ' + name)",
+        "greet(name) = print('Hello, ' + name)",
+        "def greet(name): print(f'Hello, {name}')",
+        "print('Hello', name)"
+      ],
+      "answer": "def greet(name): print(f'Hello, {name}')"
+    },
+    {
+      "question": "What is the output of the following code?\n\ncolors = ['red', 'blue', 'green']\nprint(colors[1])",
+      "choices": ["red", "blue", "green", "1"],
+      "answer": "blue"
+    },
+    {
+      "question": "Which of the following is a valid way to create a dictionary in Python?",
+      "choices": [
+        "my_dict = ['name': 'Alice', 'age': 25]",
+        "my_dict = {'name' = 'Alice', 'age' = 25}",
+        "my_dict = {'name': 'Alice', 'age': 25}",
+        "my_dict = dict['name' = 'Alice', 'age' = 25]"
+      ],
+      "answer": "my_dict = {'name': 'Alice', 'age': 25}"
+    },
+    {
+      "question": "What is the result of this code?\n\nx = 3.0\nprint(type(x))",
+      "choices": [
+        "<class 'float'>",
+        "<class 'int'>",
+        "<type 'float'>",
+        "<float>"
+      ],
+      "answer": "<class 'float'>"
+    },
+    {
+      "question": "Which keyword is used to import a module in Python?",
+      "choices": ["include", "import", "require", "load"],
+      "answer": "import"
+    },
+    {
+      "question": "What will this loop output?\n\nfor i in range(2, 6):\n    print(i)",
+      "choices": ["2 3 4 5 6", "2 3 4 5", "1 2 3 4 5", "3 4 5 6"],
+      "answer": "2 3 4 5"
+    },
+    {
+      "question": "Which of the following comments is valid in Python?",
+      "choices": [
+        "// This is a comment",
+        "# This is a comment",
+        "/* This is a comment */",
+        "<!-- This is a comment -->"
+      ],
+      "answer": "# This is a comment"
+    },
+        {
+        "question": "What will the following code print?\n\nname = 'Alice'\nprint(name.upper())",
+        "choices": ["ALICE", "alice", "NameError", "Upper(name)"],
+        "answer": "ALICE"
+    },
+    {
+        "question": "Which statement correctly checks if a variable 'age' is greater than or equal to 18?",
+        "choices": [
+            "if age => 18:",
+            "if age >= 18:",
+            "if age =>= 18:",
+            "if age =>= 18"
+        ],
+        "answer": "if age >= 18:"
+    },
+    {
+        "question": "What will this code output?\n\nx = 10\ny = 5\nprint(x > 5 and y < 10)",
+        "choices": ["True", "False", "None", "Error"],
+        "answer": "True"
+    },
+    {
+        "question": "How do you convert a string '123' to an integer?",
+        "choices": ["str(123)", "int('123')", "float(123)", "toInt('123')"],
+        "answer": "int('123')"
+    },
+    {
+        "question": "Which of the following is the correct syntax for a while loop?",
+        "choices": [
+            "while (x < 10) then:",
+            "while x < 10:\n    print(x)",
+            "loop x < 10:\n    print(x)",
+            "while x < 10 { print(x) }"
+        ],
+        "answer": "while x < 10:\n    print(x)"
+    },
+    {
+        "question": "What will this list comprehension return?\n\n[ x*2 for x in range(3) ]",
+        "choices": ["[1, 2, 3]", "[2, 4, 6]", "[0, 1, 2]", "[0, 2, 4]"],
+        "answer": "[0, 2, 4]"
+    },
+    {
+        "question": "Which string method would remove leading and trailing whitespace?",
+        "choices": ["trim()", "strip()", "remove()", "cut()"],
+        "answer": "strip()"
+    },
+    {
+        "question": "What does this code do?\n\nuser = {'name': 'Sam', 'age': 20}\nprint(user['age'])",
+        "choices": [
+            "Prints the entire dictionary",
+            "Raises an error",
+            "Prints: 'age'",
+            "Prints: 20"
+        ],
+        "answer": "Prints: 20"
+    },
+    {
+        "question": "Which function reads the entire content of a file as a string?",
+        "choices": [
+            "readlines()",
+            "read()",
+            "get()",
+            "readfile()"
+        ],
+        "answer": "read()"
+    },
+    {
+        "question": "What is the purpose of the 'try' and 'except' keywords?",
+        "choices": [
+            "To define a loop.",
+            "To define a function.",
+            "To handle errors without crashing the program.",
+            "To import modules."
+        ],
+        "answer": "To handle errors without crashing the program."
+    }
+  ]
+}

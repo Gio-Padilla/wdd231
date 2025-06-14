@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everyday Python - Learn</title>
+    <!-- Main Info -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Start your Python journey with simple, step-by-step lessons designed for beginners. Each topic includes hands-on examples to help you write real code and build confidence as you go.">
+    <meta name="author" content="Giovaughni Padilla">
+    <!-- Meta Properties -->
+    <meta property="og:title" content="Everyday Python - Learn">
+    <meta property="og:description" content="Start your Python journey with simple, step-by-step lessons designed for beginners. Each topic includes hands-on examples to help you write real code and build confidence as you go.">
+    <meta property="og:image" content="https://gio-padilla.github.io/wdd231/project/images/website.webp">
+    <meta property="og:url" content="https://gio-padilla.github.io/wdd231/project/learn.html">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/learn.css">
+    <!-- Scripts -->
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/topics.js" defer></script>
+    <script src="scripts/trending.js" defer></script>
+    <!-- Icon -->
+    <link rel="icon" href="favicon.ico">
+    <!-- Google Fonts -->
+    <!-- font-family: "Caveat", cursive; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Caveat:wght@400..700&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tagesschrift&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="site-name">
+            <img src="images/logo.webp" alt="Logo" width="150" height="150">
+            <div>Everyday Python</div>
+        </div>
+        <button id="menu-button"></button>
+        <nav id="main-menu">
+            <ul>
+                <li><a href="index.html" id="menu-home">Home</a></li>
+                <li><a href="learn.html" id="menu-learn">Learn</a></li>
+                <li><a href="quiz.html" id="menu-quiz">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Ready to Learn!</h1>
+<div class="card">
+    <h2>Top python projects from Github. <i>(Click on title to be directed to project)</i></h2>
+    <div class="github-projects"></div>
+</div>
+        <div class="card">
+            <h2>Select a topic to start learning.</h2>
+            <div id="topics-display"></div>
+            <div id="topic-data"></div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <a href="https://www.facebook.com/"><img src="images/social/facebook.svg" alt="Facebook" width="50" height="50"></a>
+            <a href="https://www.instagram.com/"><img src="images/social/instagram.svg" alt="Instagram" width="50" height="50"></a>
+            <a href="https://x.com/"><img src="images/social/twitter.svg" alt="Twitter" width="50" height="50"></a>
+        </div>
+        <div>
+            <p>©<span id="currentYear"></span> || Giovaughni Padilla || Nebraska, USA</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

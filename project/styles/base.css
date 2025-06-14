@@ -1,0 +1,167 @@
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* This is for the varibles */
+    --primary-color: #1c3e5a;
+    --secondary-color: #632b15;
+    --accent-color: #e7e7f0;
+    --second-accent-color: #f5e9c2;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Caveat", cursive;
+    font-weight: bolder;
+}
+
+a, button {
+  transition: transform 0.3s ease;
+}
+
+a:hover, button:hover {
+  transform: scale(1.04); /* 4% larger */
+}
+
+/* ----------------------------- Header CSS ----------------------------- */
+
+header {
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    display: flex;
+    gap: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: repeating-linear-gradient(transparent, transparent, transparent, transparent, rgba(0, 0, 0, 0.5));
+}
+
+/* ----------------------------- Header Nav CSS ----------------------------- */
+
+header nav a {
+    text-decoration: none;
+    display: block;
+    padding: 1rem 2rem;
+    font-size: 1.2em;
+    color: white;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    background-color: var(--primary-color);
+    background-image: repeating-linear-gradient(var(--secondary-color), transparent, var(--secondary-color));
+}
+
+header nav a:hover {
+    background-image: none;
+    background-color: var(--secondary-color);
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* ----------------------------- Nav Button CSS ----------------------------- */
+
+#menu-button {
+    display: none;
+    cursor: pointer;
+    justify-self: end;
+    font-size: 3em;
+    margin: 0 auto;
+    background-color: transparent;
+    border: none;
+    padding: 0 0.5rem;
+    color: var(--accent-color);
+}
+
+#menu-button::before {
+    content: "≡";
+}
+
+#menu-button.open::before {
+    content: "X";
+    color: red;
+}
+
+/* ----------------------------- Header Site Name & Logo ----------------------------- */
+
+.site-name {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.site-name div {
+    font-size: 2em;
+    font-weight: bold;
+    font-family: "Caveat", cursive;
+    color: var(--accent-color);
+}
+
+/* ----------------------------- Body H1----------------------------- */
+
+main h1 {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+/* ----------------------------- Footer ----------------------------- */
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+    text-align: center;
+    align-items: center;
+}
+
+footer img {
+    margin: 0.5rem;
+    padding: 0.1rem;
+    cursor: pointer;
+    filter: invert(100%);
+}
+
+/* ----------------------------- Header SMALL ----------------------------- */
+
+@media screen and (max-width: 60em) {
+    header {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 40em) {
+
+    #menu-button {
+        display: block;
+    }
+
+    header ul {
+        flex-direction: column;
+    }
+
+    header nav {
+        width: 100%;
+        text-align: center;
+    }
+
+    .site-name {
+        flex-direction: column;
+    }
+
+    #main-menu {
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.8s ease;
+    }
+
+    #main-menu.open {
+        max-height: 1000px;
+    }
+}

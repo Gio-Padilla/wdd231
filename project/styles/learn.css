@@ -1,0 +1,120 @@
+/* ----------------------------- Nav Menu ----------------------------- */
+
+#menu-learn {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: none;
+}
+
+/* ----------------------------- Cards ----------------------------- */
+
+.card h2 {
+    padding: 0.5rem;
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+}
+
+/* ----------------------------- topics-display ----------------------------- */
+
+#topics-display {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 0.5rem;
+    background-color: var(--second-accent-color);
+}
+
+#topics-display button {
+    padding: 1rem;
+    border: none;
+    background-color: var(--primary-color);
+    background-image: repeating-linear-gradient(transparent, var(--secondary-color));
+    border-radius: 0.5rem;
+    color: var(--accent-color);
+    cursor: pointer;
+}
+
+#topics-display button.selected {
+    background-color: black;
+    background-image: none;
+}
+
+#topics-display button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* ----------------------------- topic-data ----------------------------- */
+
+#topic-data {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    color: black;
+}
+
+@media screen and (max-width: 25em) {
+    #topic-data {
+        grid-template-columns: 1fr;
+    }
+}
+
+#topic-data div {
+    background-image: repeating-linear-gradient(var(--accent-color), var(--second-accent-color));
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1rem var(--secondary-color)
+}
+
+#topic-data h3 {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    margin-bottom: 0.3rem;
+}
+
+#topic-data h4 {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 0.3rem;
+    border-radius: 0.2rem;
+    margin-top: 0.5rem;
+}
+
+/* ----------------------------- github-projects ----------------------------- */
+
+.github-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    color: black;
+}
+
+@media screen and (max-width: 25em) {
+    .github-projects {
+        grid-template-columns: 1fr;
+    }
+}
+
+.github-projects .repo {
+    background-image: repeating-linear-gradient(var(--accent-color), var(--second-accent-color));
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1rem var(--secondary-color)
+}
+
+.github-projects .repo a {
+    display: block;
+    background-color: var(--primary-color);
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: var(--accent-color);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 25em) {
+    #github-projects {
+        grid-template-columns: 1fr;
+    }
+}

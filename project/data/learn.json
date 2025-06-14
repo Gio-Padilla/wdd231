@@ -1,0 +1,206 @@
+{
+  "python_basics": [
+    {
+      "section": "Variables and Data Types",
+      "topics": [
+        {
+          "title": "What are Variables?",
+          "description": "Variables are used to store information that can be referenced and manipulated later. In Python, you don’t need to declare a variable’s type before using it—just assign a value using the equals sign.",
+          "examples": ["x = 10", "name = 'Alice'"]
+        },
+        {
+          "title": "Common Data Types",
+          "description": "Python has several built-in data types including integers (whole numbers), floats (decimal numbers), strings (text), and booleans (True or False). Understanding these types is essential for performing operations and managing program logic.",
+          "examples": ["age = 25", "price = 19.99", "is_happy = True"]
+        }
+      ]
+    },
+    {
+      "section": "Control Flow - if/else",
+      "topics": [
+        {
+          "title": "Basic If Statement",
+          "description": "The if statement allows your code to take different paths based on whether a condition is true or false. This enables your program to make decisions and respond accordingly.",
+          "examples": ["if age > 18:\n    print('Adult')"]
+        },
+        {
+          "title": "If/Else and Elif",
+          "description": "You can handle more than one condition using elif (else if) and provide a default response with else. This structure makes your code more flexible and powerful when handling complex logic.",
+          "examples": [
+            "if score > 90:\n    print('A')",
+            "elif score > 80:\n    print('B')",
+            "else:\n    print('C or below')"
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Loops - for and while",
+      "topics": [
+        {
+          "title": "For Loops",
+          "description": "For loops iterate over sequences like lists, tuples, or ranges, making it easy to repeat tasks. You often use them to process each item in a collection.",
+          "examples": ["for i in range(3):\n    print(i)"]
+        },
+        {
+          "title": "While Loops",
+          "description": "While loops continue running as long as the specified condition remains true. They’re useful for cases where the number of iterations isn’t known beforehand.",
+          "examples": ["count = 0\nwhile count < 5:\n    print(count)\n    count += 1"]
+        }
+      ]
+    },
+    {
+      "section": "Functions",
+      "topics": [
+        {
+          "title": "Defining Functions",
+          "description": "Functions let you group related code into reusable blocks, improving readability and reducing repetition. You define a function using the `def` keyword followed by the function name and parentheses.",
+          "examples": ["def greet(name):\n    print(f'Hello, {name}')"]
+        },
+        {
+          "title": "Calling Functions",
+          "description": "Once defined, you can call a function by using its name followed by parentheses. You can also pass arguments to customize what the function does.",
+          "examples": ["greet('Bob')"]
+        }
+      ]
+    },
+    {
+      "section": "Lists and Dictionaries",
+      "topics": [
+        {
+          "title": "Lists",
+          "description": "Lists are ordered collections that can hold multiple items of any type. They are mutable, meaning you can change their content after creation.",
+          "examples": ["colors = ['red', 'green', 'blue']"]
+        },
+        {
+          "title": "Dictionaries",
+          "description": "Dictionaries store data as key-value pairs, which makes them ideal for labeling and organizing information. Keys must be unique and immutable (like strings or numbers).",
+          "examples": ["user = {'name': 'Alice', 'age': 30}"]
+        }
+      ]
+    },
+    {
+      "section": "Importing Modules",
+      "topics": [
+        {
+          "title": "Using the Import Statement",
+          "description": "Modules are files that contain Python code, including functions, variables, or classes. You can import them into your own programs to reuse and extend functionality without writing everything from scratch.",
+          "examples": ["import random", "print(random.randint(1, 10))"]
+        }
+      ]
+    },
+    {
+      "section": "Comments",
+      "topics": [
+        {
+          "title": "Single-line Comments",
+          "description": "Single-line comments start with a `#` and are ignored by the interpreter. Use them to annotate your code and explain what each part does.",
+          "examples": ["# This is a comment"]
+        },
+        {
+          "title": "Multi-line Comments",
+          "description": "Multi-line comments use triple quotes (`'''` or `\"\"\"`) to allow for longer descriptions or documentation. They're commonly used to describe functions, blocks of code, or scripts.",
+          "examples": ["\"\"\"\nThis is a comment\nthat spans multiple lines\n\"\"\""]
+        }
+      ]
+    },
+    {
+      "section": "Boolean Logic and Comparison Operators",
+      "topics": [
+        {
+          "title": "Comparison Operators",
+          "description": "Python uses comparison operators like `==`, `!=`, `>`, `<`, `>=`, and `<=` to compare values. These expressions return either True or False.",
+          "examples": ["5 == 5  # True", "10 < 3  # False"]
+        },
+        {
+          "title": "Logical Operators",
+          "description": "Use `and`, `or`, and `not` to combine or invert boolean expressions. These help create more complex conditions in if statements.",
+          "examples": ["age > 18 and has_id", "not is_admin"]
+        }
+      ]
+    },
+    {
+      "section": "String Manipulation",
+      "topics": [
+        {
+          "title": "String Methods",
+          "description": "Strings come with built-in methods like `.upper()`, `.lower()`, `.strip()`, `.replace()`, and `.split()` that let you transform and work with text easily.",
+          "examples": ["name.upper()", "'hello world'.replace('world', 'Python')"]
+        },
+        {
+          "title": "String Formatting",
+          "description": "Use f-strings or `.format()` to insert variables into strings. This makes your output more dynamic and readable.",
+          "examples": ["f'Hello, {name}'", "'Age: {}'.format(age)"]
+        }
+      ]
+    },
+    {
+      "section": "Type Casting and Conversion",
+      "topics": [
+        {
+          "title": "Changing Data Types",
+          "description": "You can convert values between data types using functions like `int()`, `str()`, `float()`, and `bool()`.",
+          "examples": ["str(123)", "int('42')", "float('3.14')"]
+        },
+        {
+          "title": "Common Type Errors",
+          "description": "Be careful when mixing data types in operations. For example, you can't add a string and an integer without converting one.",
+          "examples": ["'Age: ' + str(25)", "int('hello')  # This will cause an error"]
+        }
+      ]
+    },
+    {
+      "section": "Error Handling",
+      "topics": [
+        {
+          "title": "Try and Except Blocks",
+          "description": "Use try/except to catch and handle runtime errors gracefully. This prevents your program from crashing unexpectedly.",
+          "examples": [
+            "try:\n    value = int(input('Enter a number: '))\nexcept ValueError:\n    print('That was not a number.')"
+          ]
+        },
+        {
+          "title": "Finally Block",
+          "description": "The `finally` block always runs after try/except, and is useful for cleanup tasks like closing files.",
+          "examples": [
+            "try:\n    f = open('file.txt')\nexcept FileNotFoundError:\n    print('File not found.')\nfinally:\n    print('Done.')"
+          ]
+        }
+      ]
+    },
+    {
+      "section": "File Input and Output",
+      "topics": [
+        {
+          "title": "Reading Files",
+          "description": "Use `open()` with `read()` or `readlines()` to load content from files. Always close the file or use a `with` statement.",
+          "examples": [
+            "with open('file.txt', 'r') as f:\n    content = f.read()\n    print(content)"
+          ]
+        },
+        {
+          "title": "Writing to Files",
+          "description": "Use `open()` with mode `'w'` or `'a'` to write or append to files.",
+          "examples": [
+            "with open('log.txt', 'w') as f:\n    f.write('Hello, file!')"
+          ]
+        }
+      ]
+    },
+    {
+      "section": "List Comprehensions",
+      "topics": [
+        {
+          "title": "Creating Lists with Comprehension",
+          "description": "List comprehensions provide a concise way to create lists using a single line of code.",
+          "examples": ["squares = [x**2 for x in range(5)]", "[word.upper() for word in ['a', 'b', 'c']]"]
+        },
+        {
+          "title": "With Conditionals",
+          "description": "You can add an `if` condition inside the list comprehension to filter items.",
+          "examples": ["evens = [x for x in range(10) if x % 2 == 0]"]
+        }
+      ]
+    }
+  ]
+}
