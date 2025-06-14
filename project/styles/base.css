@@ -121,6 +121,11 @@ footer {
     align-items: center;
 }
 
+footer p a {
+    color: var(--accent-color);
+    cursor: pointer;
+}
+
 footer img {
     margin: 0.5rem;
     padding: 0.1rem;
